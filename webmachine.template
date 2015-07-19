@@ -8,7 +8,6 @@
 {template, "_README.md", "{{name}}/README.md"}.
 {template, "Makefile", "{{name}}/Makefile"}.
 {template, "rebar.config", "{{name}}/rebar.config"}.
-{template, "relx.config", "{{name}}/relx.config"}.
 {template, "dot.gitignore", "{{name}}/.gitignore"}.
 
 {template, "src/_.app.src", "{{name}}/src/{{name}}.app.src"}.
