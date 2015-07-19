@@ -11,11 +11,12 @@
 {template, "dot.gitignore", "{{name}}/.gitignore"}.
 
 {template, "src/_.app.src", "{{name}}/src/{{name}}.app.src"}.
-
-{template, "src/_.erl", "{{name}}/src/{{name}}.erl"}.
 {template, "src/_app.erl", "{{name}}/src/{{name}}_app.erl"}.
 {template, "src/_sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
 {template, "src/_config.erl", "{{name}}/src/{{name}}_config.erl"}.
 {template, "src/_resource.erl", "{{name}}/src/{{name}}_resource.erl"}.
+
+{template, "sys.config", "{{name}}/config/sys.config"}.
+{template, "vm.args", "{{name}}/config/vm.args"}.
 
 {dir, "{{name}}/priv/www"}.
