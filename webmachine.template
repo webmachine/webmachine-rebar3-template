@@ -1,23 +1,22 @@
 %%-*- mode: erlang -*-
 {description, "Generates an empty WebMachine application"}.
 {variables, [
-    {name, "wmskel", "name of the application to build"},
-    {prefix, ".", "path where the application should be created"}
+    {name, "wmskel", "name of the application to build"}
 ]}.
 
 %% main project files
-{template, "_README.md", "{{prefix}}/README.md"}.
-{template, "Makefile", "{{prefix}}/Makefile"}.
-{template, "rebar.config", "{{prefix}}/rebar.config"}.
-{template, "relx.config", "{{prefix}}/relx.config"}.
-{template, "dot.gitignore", "{{prefix}}/.gitignore"}.
+{template, "_README.md", "{{name}}/README.md"}.
+{template, "Makefile", "{{name}}/Makefile"}.
+{template, "rebar.config", "{{name}}/rebar.config"}.
+{template, "dot.gitignore", "{{name}}/.gitignore"}.
 
-{template, "src/_.app.src", "{{prefix}}/src/{{name}}.app.src"}.
+{template, "src/_.app.src", "{{name}}/src/{{name}}.app.src"}.
+{template, "src/_app.erl", "{{name}}/src/{{name}}_app.erl"}.
+{template, "src/_sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
+{template, "src/_config.erl", "{{name}}/src/{{name}}_config.erl"}.
+{template, "src/_resource.erl", "{{name}}/src/{{name}}_resource.erl"}.
 
-{template, "src/_.erl", "{{prefix}}/src/{{name}}.erl"}.
-{template, "src/_app.erl", "{{prefix}}/src/{{name}}_app.erl"}.
-{template, "src/_sup.erl", "{{prefix}}/src/{{name}}_sup.erl"}.
-{template, "src/_config.erl", "{{prefix}}/src/{{name}}_config.erl"}.
-{template, "src/_resource.erl", "{{prefix}}/src/{{name}}_resource.erl"}.
+{template, "sys.config", "{{name}}/config/sys.config"}.
+{template, "vm.args", "{{name}}/config/vm.args"}.
 
-{dir, "{{prefix}}/priv/www"}.
+{dir, "{{name}}/priv/www"}.
