@@ -1,0 +1,23 @@
+{application, '{{name}}',
+ [{description, "{{desc}}"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {'{{name}}_app', []}},
+  {applications,
+   [kernel,
+    stdlib,
+    inets,
+    crypto,
+    mochiweb,
+    webmachine
+   ]},
+  {env,[
+        {web_ip, "0.0.0.0"},
+        {web_port, 8080}
+       ]},
+  {modules, []},
+
+  {contributors, []},
+  {licenses, []},
+  {links, []}
+ ]}.

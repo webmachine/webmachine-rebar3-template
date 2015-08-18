@@ -5,7 +5,7 @@ You should find in this directory:
 README : this file
 Makefile : simple make commands
 rebar.config : configuration for Rebar3
-/src
+{{apps_dir}}/{{name}}/src
   /{{name}}.app.src : application information file for OTP
   /{{name}}.erl : the public API for your app
   /{{name}}_app.erl : base module for the Erlang application behavior
