@@ -39,3 +39,4 @@ resolve_deps(App) ->
 is_otp_base_app(kernel) -> true;
 is_otp_base_app(stdlib) -> true;
 is_otp_base_app(_) -> false.
+

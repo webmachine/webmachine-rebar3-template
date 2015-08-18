@@ -19,6 +19,9 @@ all: $(REBAR3)
 rel: all
 	@$(REBAR3) release
 
+prod: all
+	@$(REBAR3) as prod release
+
 $(REBAR3):
 	curl -Lo rebar3 $(REBAR3_URL) || wget $(REBAR3_URL)
 	chmod a+x rebar3
